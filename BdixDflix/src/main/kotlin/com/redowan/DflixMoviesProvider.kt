@@ -34,7 +34,7 @@ import org.jsoup.nodes.Element
 
 
 class DflixMoviesProvider : MainAPI() { // all providers must be an instance of MainAPI
-    override var mainUrl = "https://movies.discoveryftp.net"
+    override var mainUrl = "https://movies.discoveryftp.net/m"
     override var name = "(BDIX) Dflix Movies"
     override val hasMainPage = true
     override val hasDownloadSupport = true
