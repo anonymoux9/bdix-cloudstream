@@ -3,6 +3,8 @@
     "description": "Redowan's BDIX repository",
     "manifestVersion": 1,
     "pluginLists": [
-      "https://raw.githubusercontent.com/redowan99/Redowan-CloudStream/builds/plugins.json"
+      "pluginLists": [
+  "https://raw.githubusercontent.com/anonymoux9/bdix-cloudstream/builds/plugins.json"
+      ]
     ]
 }
