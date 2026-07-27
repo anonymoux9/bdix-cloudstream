@@ -33,7 +33,7 @@ import org.jsoup.nodes.Element
 
 
 class DflixSeriesProvider : MainAPI() { // all providers must be an instance of MainAPI
-    override var mainUrl = "https://dflix.discoveryftp.net"
+    override var mainUrl = "https://movies.discoveryftp.net/s"
     override var name = "(BDIX) Dflix Series"
     override val hasMainPage = true
     override val hasDownloadSupport = true
@@ -59,7 +59,7 @@ class DflixSeriesProvider : MainAPI() { // all providers must be an instance of 
     private suspend fun login() {
         if (loginCookie?.size != 2) {
             val client =
-                app.get("https://dflix.discoveryftp.net/login/demo", allowRedirects = false)
+                app.get("https://movies.discoveryftp.net/login/demo", allowRedirects = false)
             loginCookie = client.cookies
         }
     }
